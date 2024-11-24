@@ -1,100 +1,119 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error 404 - Página no encontrada</title>
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #333;
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-            animation: fadeIn 1s ease-in-out;
-        }
-        .container img {
-            width: 150px;
-            margin-bottom: 20px;
-        }
-        h1 {
-            font-size: 72px;
-            margin-bottom: 10px;
-            color: #007bff;
-            animation: bounce 1s infinite;
-        }
-        p {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-            border: 2px solid #007bff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        a:hover {
-            background-color: #007bff;
-            color: #fff;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-30px); }
-            60% { transform: translateY(-15px); }
-        }
-        @media (max-width: 768px) {
-            body {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 48px;
-            }
-            p {
-                font-size: 18px;
-            }
-            a {
-                font-size: 16px;
-                padding: 8px 16px;
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 36px;
-            }
-            p {
-                font-size: 16px;
-            }
-            a {
-                font-size: 14px;
-                padding: 6px 12px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <img src="https://i.imgur.com/O0DCcQy.png" alt="Error 404">
-        <h1>404</h1>
-        <p>Oops, la página que buscas no se pudo encontrar o esta en mantenimiento.</p>
-        <a href="index.html">Volver al inicio</a>
-    </div>
-</body>
-</html>
+<html><head><base href="." target="_blank"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dynamic Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/script.js"></script>
+    </head>
+    <body>
+    
+        <nav class="nav-container">
+
+
+            <a href="#inicio" class="nav-item">Inicio</a>
+            <a href="#sobre-mi" class="nav-item">Sobre mí</a>
+            <a href="#habilidades" class="nav-item">Habilidades</a>
+            <a href="#proyectos" class="nav-item">Proyectos</a>
+            <a href="#contacto" class="nav-item">Contacto</a>
+        </nav>
+        
+        <div class="hero">
+            <div class="background-animation">
+                <div class="blob" id="blob1"></div>
+                <div class="blob" id="blob2"></div>
+            </div>
+        
+            <div class="content" >
+                <h1>Kevin Genaro Bautista García</h1>
+                <p class="subtitle">Desarrollador Web & Programador</p>
+                <div class="contact-info">
+                    <div class="contact-links">
+                        <a href="https://github.com/Devone-12" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="devone.web.sites.programming@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+
+
+                    </div>
+                    <div class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cáncun, QROO, México</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section id="sobre-mi" class="section">
+            <h2 class="section-title"><i class="fas fa-code"></i>Sobre Mí </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    Soy Kevin Genaro Bautista García, un desarrollador web con experiencia en HTML, CSS, JavaScript y más. Me apasiona crear soluciones digitales innovadoras y mejorar la experiencia de usuario en cada proyecto que realizo.
+                </div>
+        
+                <p class="funny-quote">
+                    <i class="fas fa-lightbulb"></i> "No soy robot, <i style="color: #00ccff;">soy un desarrollador Front-End </i>apasionado por el <i style="color: rgb(34, 255, 0);">diseño y la programacion</i>."
+                </p>
+            </div>
+        </section>
+        
+        <section id="habilidades" class="section">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills">
+                <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="skill-tag"><i class="fas fa-code"></i> Java</span>
+                <span class="skill-tag"><i class="fas fa-cogs"></i> C</span>
+                <span class="skill-tag"><i class="fas fa-cogs"></i> C++</span>
+                <span class="skill-tag"><i class="fab fa-microsoft"></i> C#</span>
+                <span class="skill-tag"><i class="fas fa-database"></i> Bases de Datos</span>
+                <span class="skill-tag"><i class="fas fa-paint-brush"></i> UI/UX</span>
+            </div>
+            <div class="learning-skills">
+                <h3 class="section-subtitle" style="text-align: center;">Actualmente Aprendiendo</h3>
+                <div class="skills">
+                    <span class="skill-tag"><i class="fas fa-code"></i> Python</span>
+                    <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                    <span class="skill-tag"><i class="fas fa-code"></i> TypeScript</span>
+                    <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                    <span class="skill-tag"><i class="fab fa-node"></i> Node.js</span>
+                </div>
+            </div>
+        </section>
+        
+        <section id="proyectos" class="section">
+            <h2 class="section-title">Proyectos <i class="fas fa-star"></i></h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Viajes</h3>
+                    <p>Un sitio web interactivo donde puedes explorar destinos turísticos, planificar viajes y más.</p>
+                    <div class="project-stats">
+                    </div>
+                    <p><strong>Tecnologías:</strong> 
+                        <i class="fab fa-html5" title="HTML"></i>
+                        <i class="fab fa-css3-alt" title="CSS"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                    </p>
+                    <a href="https://devone-12.github.io/Viajes/" class="cta-button" target="_blank">Ver Proyecto</a>
+                </div>
+        
+                <div class="project-card">
+                    <h3>Halloween</h3>
+                    <p>Un proyecto divertido para celebrar Halloween, con efectos visuales y diseño temático.</p>
+                    <div class="project-stats">
+                    </div>
+                    <p><strong>Tecnologías:</strong> 
+                        <i class="fab fa-html5" title="HTML"></i>
+                        <i class="fab fa-css3-alt" title="CSS"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                    </p>
+                    <a href="https://devone-12.github.io/Hallowen/" class="cta-button" target="_blank">Ver Proyecto</a>
+                </div>
+
+            </div>
+        </section>
+    </body></html>
