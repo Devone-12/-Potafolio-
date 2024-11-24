@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,51 +7,56 @@
     <style>
         body {
             margin: 0;
-            background-color: #f4f4f4;
-            color: black;
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
         }
 
         .container {
             text-align: center;
             margin: auto;
             padding: 20px;
-            max-width: 1200px;
+            max-width: 800px;
         }
 
         h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #00ff00;
         }
 
         .chico-chill img {
-            max-width: 40%;
+            max-width: 60%;
             height: auto;
-            border-radius: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ff00;
         }
 
         a {
             display: inline-block;
             text-decoration: none;
-            color: #007BFF;
+            color: #00ff00;
             font-weight: bold;
             margin-top: 20px;
-            font-size: 1rem;
+            font-size: 1.2rem;
+            border: 2px solid #00ff00;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         a:hover {
-            text-decoration: underline;
-            color: #0056b3;
+            background-color: #00ff00;
+            color: #000;
         }
 
         @media (max-width: 992px) {
             h1 {
-                font-size: 1.75rem;
+                font-size: 2rem;
             }
 
             .container {
                 padding: 15px;
-                width: 90%;
             }
         }
 
@@ -62,11 +67,10 @@
 
             .container {
                 padding: 10px;
-                width: 100%;
             }
 
             a {
-                font-size: 0.9rem;
+                font-size: 1rem;
             }
         }
     </style>
