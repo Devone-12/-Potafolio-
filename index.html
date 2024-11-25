@@ -4,55 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INICIO | Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
         body {
             margin: 0;
-            background-color: #000;
-            color: #00ff00;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: #282c34;
+            color: #61dafb;
+            font-family: 'Comic Neue', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
         .container {
             text-align: center;
-            margin: auto;
             padding: 20px;
-            max-width: 800px;
+            border: 2px dashed #61dafb;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px #00ff00;
+            text-shadow: 2px 2px 4px #61dafb;
+            animation: shake 0.5s infinite alternate;
+            font-family: 'Press Start 2P', cursive;
+            background: linear-gradient(to right, #ff69b4, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes shake {
+            0% { transform: translateX(-5px); }
+            100% { transform: translateX(5px); }
         }
 
         .chico-chill img {
             max-width: 60%;
             height: auto;
-            border: 2px solid #00ff00;
+            border: 2px solid #61dafb;
             border-radius: 10px;
-            box-shadow: 0 0 10px #00ff00;
+            box-shadow: 0 0 10px #61dafb;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
         a {
             display: inline-block;
             text-decoration: none;
-            color: #00ff00;
+            color: #282c34;
+            background-color: #61dafb;
             font-weight: bold;
             margin-top: 20px;
-            font-size: 1.2rem;
-            border: 2px solid #00ff00;
+            font-size: 1.5rem;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-radius: 50px;
+            box-shadow: 0 5px #999;
+            transition: all 0.3s ease;
         }
 
         a:hover {
-            background-color: #00ff00;
-            color: #000;
+            background-color: #21a1f1;
+            box-shadow: 0 15px #666;
+            transform: translateY(-5px);
         }
 
         @media (max-width: 992px) {
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .container {
@@ -62,7 +90,7 @@
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
 
             .container {
@@ -70,7 +98,7 @@
             }
 
             a {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -81,7 +109,7 @@
         <div class="chico-chill">
             <img src="assets/img/chill guy.jpg" alt="Chill Guy">
         </div>
-        <a href="Portafolio.html">| Portafolio |</a>
+        <a href="Portafolio.html"><i class="fas fa-laptop-code"></i> Portafolio</a>
     </div>
 </body>
 </html>
